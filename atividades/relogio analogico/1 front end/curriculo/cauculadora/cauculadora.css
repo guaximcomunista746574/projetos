@@ -1,0 +1,40 @@
+.painel{
+    border: 1px solid rgb(3, 52, 213);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.29);
+    font-family: cursive;
+    border-radius: 20px;
+    color: aliceblue;
+    height: 400px;
+}
+input {
+    border-radius: 10px;
+    height: 30px;
+     width: 250px; ;
+    text-align: center;
+}
+#resultado{
+font-weight: 50px;
+color: rgb(0, 0, 0);
+font-weight: bold;
+}
+body{
+background-image: linear-gradient(to left, rgb(154, 62, 62), rgb(74, 74, 191));
+}
+.botão{
+    background-color: rgba(209, 202, 202, 0);
+    border-radius: 10px;
+    color: rgb(227, 227, 227);
+
+}
+.botão:hover{
+    background-color: rgb(85, 225, 225);
+
+
+} 
+imgtenpo{
+    animation: voltar;
+}

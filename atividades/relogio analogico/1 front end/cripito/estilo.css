@@ -1,0 +1,31 @@
+body{
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/e7/67/32/e76732de2cbe64c7c103e97e6d08f6cb.gif);
+    text-align: center;
+   
+}
+.painel{
+    background-color: rgba(11, 3, 3, 0.29);
+    border-radius: 30px;
+    border-color: rgb(97, 162, 0);
+    font-family: cursive
+    
+}
+.botão{
+    background-color: rgb(249, 122, 122);
+    border-radius: 5px;
+    border-color: rgb(158, 231, 243);
+    font-family: cursive;
+}
+.select{
+    border-radius: 5px;
+    border-color: blueviolet;
+    background-color: rgba(255, 252, 105, 0.972);
+    font-family: cursive;
+}
+.botao{
+    border-radius: 5px;
+    background-color: rgb(193, 193, 245);
+    border-color: aquamarine;
+    font-family: cursive
+    
+}

@@ -1,0 +1,25 @@
+
+body{
+    /* background-color: rgb(224, 223, 217); */
+    background-image: linear-gradient(hsla(0, 41%, 3%, 0.39), rgba(0, 0, 0, 0));
+    text-align: center;
+}
+
+ .tabela{
+text-align: left;
+background-color: rgb(78, 214, 169);
+ color: rgb(1, 0, 10);
+ font-family:  unset
+
+ }   
+.foto{
+    border: 5px solid rgb(16, 7, 20);
+    border-radius: 11%;
+}
+.tabela tr td:hover{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.26);
+}
+.texto{
+    font-size: 50px;
+}    

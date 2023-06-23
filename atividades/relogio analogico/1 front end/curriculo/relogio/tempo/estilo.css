@@ -1,0 +1,47 @@
+.painel {
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-color: rgba(0, 0, 0, 0.51);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    width: 600px;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2018/03/28/10/29/background-3268840_1280.jpg);
+}
+
+.botão {
+    border-radius: 20px;
+    border-color: blue;
+    color: rgb(85, 161, 161);
+}
+
+.button {
+    border-color: aquamarine;
+    border-radius: 10px;
+    color: blue;
+
+}
+
+.botão :hover {
+    background-color: azure;
+}
+
+.botao {
+    border-radius: 20px;
+    border-color: rgb(96, 96, 170);
+    
+}
+.imgTempo{
+    animation: voltar 4s alternate infinite;
+}
+@keyframes voltar{
+    0%{
+        transform: translateX(100px);
+    }
+    
+}

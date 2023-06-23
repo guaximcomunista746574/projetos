@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/dia-das-m%C3%A3es-mulheres-dos-namorados-ou-anivers%C3%A1rio-num-fundo-lil%C3%A1s-cora%C3%A7%C3%B5es-de-diferentes-cores-e-doces-fitas-adequadas-para-168393222.jpg)
+    
+   
+}
+
+.painel {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(240, 248, 255, 0.278);
+    border-radius: 10px;
+    padding-left: 400px;
+    margin: auto;
+    font-family: fantasy;
+    font-size: 20px;
+    color: rgb(177, 42, 210);
+
+}
+
+.botao {
+    background-color: rgba(232, 80, 227, 0.287);
+    color: bisque;
+    border-radius: 19px;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    border-color: rgb(13, 195, 219);
+}
+.botão {
+    background-color: rgb(223, 35, 201);
+    color: bisque;
+    border-radius: 19px;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    border-color: rgb(0, 255, 255);
+}
+.botao:hover{
+    background-color: blueviolet;
+    height: 50px;
+    width: 70px;
+    transition: 1s;
+}
+
+.botão:hover{
+    background-color: blueviolet;
+    height: 50px;
+    width: 70px;
+    transition: 1s;
+}

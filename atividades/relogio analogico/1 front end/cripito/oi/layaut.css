@@ -1,0 +1,92 @@
+body,p{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+header{
+    grid-area: cabecalho;
+    background-color: rgb(159, 211, 91);
+    border-radius:200px;
+    color: rgba(128, 255, 0, 0.342);
+    
+}
+section{
+    grid-area: seção;
+    background-color: rgb(183, 228, 135);
+    border-radius: 50px;
+    border-color: rgb(136, 54, 54);
+}
+aside{
+    grid-area: barralateral;
+    background-color: rgb(182, 216, 185);
+    border-radius: 70px;
+    
+}
+footer{
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+}
+.parte1, .parte2, .parte3{
+    width: 25%;
+    background-color: rgb(136, 219, 140);
+    border-radius: 50px;
+}
+.parte2{
+    width: 50%;
+    margin: 0 2px;
+}
+.principal {
+  width: 80%;  
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 100px 450px 150px;
+  grid-template-areas: 
+  "cabecalho cabecalho"
+  "seção barralateral"
+  "rodape rodape";
+}
+@media(max-width:992px) {
+    .principal {
+        grid-template-columns: 100%;
+        grid-template-areas: "cabeçalho" "seção" "barralateral rodape";
+    }
+
+
+.footer {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+
+}
+.parte1,.parte2,.parte3{
+    margin: 0;
+    width: 49%;
+}
+.parte2{
+    width: 100%;
+    order: -1;
+}
+
+
+}
+@media(max-width: 768px){
+body{
+    margin: 0 15px;
+}
+.principal, .parte1,.parte2,.parte3{
+    width: 100%;
+}
+.parte2{
+    order: initial;
+}
+
+}
+.foto{
+    border-radius: 60px;
+}

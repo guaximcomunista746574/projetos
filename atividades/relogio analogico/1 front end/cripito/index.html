@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> busca de crpito moedas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+<div class="painel">
+    <h1>buscar preço de cripito moedas</h1>
+   <select  class="select" id="moeda">
+    <option value="bitcoin">bitcoin</option>
+    <option value="ethereum">etherium</option> 
+    <option value="litecoin">litecoin</option>
+    <option value="dogecoin">dogecoin</option>
+    
+   </select>
+
+
+<button class="botão" onclick="buscar()">buscar</button>
+<button class="botao" onclick="limpar()">limpar</button>
+
+<p id="resultado"></p>
+<div id="imagem"></div>
+</div>
+
+    <script src="sript.js"></script> 
+    
+</body>
+
+</html>

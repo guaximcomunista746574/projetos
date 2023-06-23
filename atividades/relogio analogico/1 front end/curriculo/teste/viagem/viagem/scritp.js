@@ -1,0 +1,27 @@
+$(window).scroll(function () {
+    var posicao = $(this).scrollTop();
+    $(".avião").css({
+        'right': posicao / 4 + '%'
+
+
+    });
+
+});
+document.getElementById("busca").addEventListener("keyup", function () {
+
+    var entrrada = this.value.toLowerCase();
+    var cartoes = document.getElementsByClassName("card");
+    for (var i = 0; i < cartoes.length; i++) {
+        var nome = cartoes[i].getAttribute("data-name").toLowerCase();
+
+        if (nome.indexOf(entrrada) > -1) {
+            cartoes[i].style.display = "";
+        } else {
+            cartoes[i].style.display = "none";
+        }
+
+    }
+
+
+
+});
