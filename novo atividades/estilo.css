@@ -1,0 +1,21 @@
+
+body{
+    color: blue;
+    background-image: url();
+}
+    
+#gameCanvas{
+    background-image: linear-gradient(to bottom right, #fbec13, #06ff06);
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+    
+}
+.painel{
+    width: 800px;
+    height: 600px;
+    text-align: center;
+}
+
