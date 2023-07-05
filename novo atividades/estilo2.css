@@ -20,3 +20,9 @@ body {
 .game-over-message {
     font-size: 24px;
 }
+.botão{
+    color: aqua;
+    background-color: #0000003c;
+    border-radius: 12px;
+    border-color: blue;
+}

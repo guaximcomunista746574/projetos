@@ -1,21 +1,50 @@
-
-body{
+body {
     color: blue;
     background-image: url();
+    background-color: rgb(200, 159, 215);
 }
-    
-#gameCanvas{
+
+#gameCanvas {
     background-image: linear-gradient(to bottom right, #fbec13, #06ff06);
+    background-image: url(https://img.freepik.com/vetores-premium/pixel-art-paisagem-floresta-nas-montanhas-ao-por-do-sol-com-fundo-minimalista-de-8-bits_360488-281.jpg?w=2000);
     border: 1px solid black;
     width: 800px;
     height: 600px;
     margin: auto;
     text-align: center;
-    
+    border-radius: 40px;
+    box-shadow: #06ff06;
 }
-.painel{
+
+
+
+
+.painel {
     width: 800px;
     height: 600px;
     text-align: center;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    
 }
 
+.game-over-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    display: none;
+}
+#ponto{
+color:aqua;
+font-family: fantasy;
+font-size: 30px;
+margin: 0;
+
+
+}

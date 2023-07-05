@@ -15,13 +15,15 @@ var bolaDX = 2;
 var bolaDY = -2;
 
 var tijolosPorLinha = 3;
-var tijolosPorColuna = 6;
+var tijolosPorColuna = 9;
 var tijolosLargura = 75;
 var tijolosAltura = 30;
-var espacamento = 0;
+var espacamento = 20;
 var espacamentoSuperior = 30;
 var espacamentoEsquerdoQuadro = 30;
 var tijolos = [];
+var totalPontuação=tijolosPorLinha*tijolosPorColuna*10;
+var pontuacao=0;
 
 for (var coluna = 0; coluna < tijolosPorColuna; coluna++) {
     tijolos[coluna] = []
@@ -102,16 +104,33 @@ function detectarColisao() {
         for (var linha = 0; linha < tijolosPorLinha; linha++) {
             var tijolo = tijolos[coluna][linha];
             if (tijolo.ativo === 1) {
-                if (bolaX > tijolo.x
-                    && bolaX < tijolo.x + tijolosLargura
-                    && bolaY > tijolo.y
-                    && bolaY < tijolo.y + tijolosAltura) {
+                if (bolaX + bolaRadius > tijolo.x
+                    && bolaX - bolaRadius < tijolo.x + tijolosLargura
+                    && bolaY +bolaRadius > tijolo.y
+                    && bolaY - bolaRadius < tijolo.y + tijolosAltura) {
                     bolaDY = -bolaDY;
                     tijolo.ativo = 0;
+                    tela=document.getElementById("ponto");
+                    pontuacao=pontuacao+100;
+                    tela.innerHTML="score: "+pontuacao;
+                    if (pontuacao===totalPontuação) {
+                        Window.location.reload();
+                        
+                    }
                 }
             }
 
         }
+}
+function gameover() {
+    var gameover=document.getElementById("game-over-container");
+    gameover.style.display="block";
+}
+function reiniciar() {
+//     document.location.reload();
+//    var gameover=document.getElementById("game-over-container");
+//     gameover.style.display="none";
+window.open('index.html');
 }
 function desenhar() {
     desenho.clearRect(0, 0, canvas.width, canvas.height);
@@ -119,17 +138,19 @@ function desenhar() {
     desenharBola();
     desenharTijolos();
     detectarColisao();
+
     if (bolaX + bolaDX > canvas.width - bolaRadius || bolaX + bolaDX < bolaRadius) {
         bolaDX = -bolaDX;
     }
     if (bolaY + bolaDY < bolaRadius) {
         bolaDY = -bolaDY;
-    } else if (bolaY + bolaDY > canvas.height - bolaRadius) {
+    } else if (bolaY + bolaRadius > canvas.height - bolaRadius) {
         if (bolaX > raqueteX && bolaX < raqueteX + raqueteLargura) {
             bolaDY = -bolaDY;
 
         } else {
-            document.location.reload();
+            //document.location.reload();//reinicia
+            gameover();
         }
 
     }
